@@ -8,7 +8,9 @@ pipeline {
                 
                 sh '''
                 ls
-                docker-compose up
+                docker images
+                docker ps
+                
                 '''
             }
         }
