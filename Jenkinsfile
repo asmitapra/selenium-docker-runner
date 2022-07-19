@@ -7,6 +7,7 @@ pipeline {
                 //sh
                 
                 sh '''
+                ls
                 cd /tmp 
                 docker-compose -f docker-compose.yaml up
                 '''
