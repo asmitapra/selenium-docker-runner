@@ -8,7 +8,6 @@ pipeline {
                 
                 sh '''
                 ls
-                cd /tmp 
                 docker-compose -f docker-compose.yaml up
                 '''
             }
@@ -17,7 +16,6 @@ pipeline {
             steps {
                 //sh
                 sh '''
-                cd /tmp 
                 docker-compose -f docker-compose.yaml down
                 '''
             }
