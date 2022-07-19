@@ -8,7 +8,7 @@ pipeline {
                 
                 sh '''
                 ls
-                docker images
+                docker --version
                 docker ps
                 
                 '''
