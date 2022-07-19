@@ -8,7 +8,7 @@ pipeline {
                 
                 sh '''
                 ls
-                docker --version
+                docker compose --version
                 docker ps
                 
                 '''
