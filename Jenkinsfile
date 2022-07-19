@@ -6,13 +6,19 @@ pipeline {
             steps {
                 //sh
                 
-                sh "docker-compose -f /tmp/docker-compose.yaml up"
+                sh '''
+                cd /tmp 
+                docker-compose -f docker-compose.yaml up
+                '''
             }
         }
         stage('Bring Grid Down') {
             steps {
                 //sh
-                sh "docker-compose -f /tmp/docker-compose.yaml down"
+                sh '''
+                cd /tmp 
+                docker-compose -f docker-compose.yaml down
+                '''
             }
         }
     }
