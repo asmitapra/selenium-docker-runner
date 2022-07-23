@@ -17,7 +17,7 @@ services:
     environment:
       - HUB_HOST=hub   
   search-module:
-     image: asmita4
+     image: asmitaprabhune/asmita4
      depends_on:
       - chrome
       - firefox
